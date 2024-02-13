@@ -39,7 +39,7 @@ export default function Meta() {
             <meta name="og:description"
                 content="Aman Agrawal's (xlibraries) Personal Portfolio Website. Made with Ubuntu 20.4 (Linux) theme by Next.js and Tailwind CSS." />
             <meta name="og:image" content="images/logos/logo_1200.png" />
-            <meta name="og:url" content="http://xlibraries.github.io/" />
+            <meta name="og:url" content="https://github.com/xlibraries/" />
             <meta name="og:site_name" content="Aman Agrawal Personal Portfolio" />
             <meta name="og:locale" content="en_IN" />
             <meta name="og:type" content="website" />
