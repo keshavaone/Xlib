@@ -683,6 +683,7 @@ function Resume() {
     <iframe
       className="h-full w-full"
       src="./files/Aman-Agrawal-Resume.pdf"
+      
       title="Aman Agrawal resume"
       frameBorder="0"
     ></iframe>
