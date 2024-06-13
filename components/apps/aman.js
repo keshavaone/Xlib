@@ -226,12 +226,12 @@ function About() {
         <img
           className="w-full"
           src="./images/logos/bitmoji.png"
-          alt="Aman Agrawal Logo"
+          alt="Keshava Rao Logo"
         />
       </div>
       <div className=" mt-4 md:mt-8 text-lg md:text-2xl text-center px-1">
         <div>
-          my name is <span className="font-bold">Aman Agrawal</span> ,
+          my name is <span className="font-bold">Keshava Rao</span> ,
         </div>
         <div className="font-normal ml-1">
           I'm a{" "}
@@ -252,8 +252,8 @@ function About() {
             </a>
           </u>
           , and open for oppurtunities Software Development Roles! ( Hit me up{" "}
-          <a className="text-underline" href="mailto:aman989308964@gmail.com">
-            <u>aman9893089064@gmail.com</u>
+          <a className="text-underline" href="mailto:career_keshava@outlook.com">
+            <u>career_keshava@outlook.com</u>
           </a>{" "}
           :) )
         </li>
@@ -682,8 +682,8 @@ function Resume() {
   return (
     <iframe
       className="h-full w-full"
-      src="./files/Aman-Agrawal-Resume.pdf"
-      title="Aman Agrawal resume"
+      src="./files/Keshava Rao - Resume.pdf"
+      title="Keshava Rao resume"
       frameBorder="0"
     ></iframe>
   );
