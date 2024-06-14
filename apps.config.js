@@ -5,7 +5,7 @@ import { displaySettings } from './components/apps/settings';
 import { displayChrome } from './components/apps/chrome';
 import { displayTrash } from './components/apps/trash';
 import { displayGedit } from './components/apps/gedit';
-import { displayAboutAman } from './components/apps/aman';
+import { displayAboutKeshav } from './components/apps/keshav';
 import { displayTerminalCalc } from './components/apps/calc';
 
 const apps = [
@@ -28,13 +28,13 @@ const apps = [
         screen: displayTerminalCalc,
     },
     {
-        id: "about-aman",
-        title: "About Aman",
+        id: "about-keshav",
+        title: "About Keshav",
         icon: './themes/Yaru/system/user-home.png',
         disabled: false,
         favourite: true,
         desktop_shortcut: true,
-        screen: displayAboutAman,
+        screen: displayAboutKeshav,
     },
     {
         id: "vscode",
