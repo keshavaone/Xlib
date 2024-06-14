@@ -682,7 +682,7 @@ function Resume() {
   return (
     <iframe
       className="h-full w-full"
-      src="./files/Keshava Rao - Resume.pdf"
+      src="./files/Keshava-Rao-Resume.pdf"
       title="Keshava Rao resume"
       frameBorder="0"
     ></iframe>
