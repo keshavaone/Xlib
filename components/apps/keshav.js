@@ -1,6 +1,9 @@
 import { Component } from "react";
 import ReactGA from "react-ga4";
 import React from "react";
+import { useState } from 'react';
+// import backgroundImage from './files/BGTheme.png'; // Make sure to set the correct path to your image file
+
 
 export class AboutKeshav extends Component {
   constructor() {
@@ -276,90 +279,153 @@ function About() {
   );
 }
 function Experience() {
+  const companies = [
+    {
+      name: "Amazon.com",
+      position: "Automation Specialist",
+      duration: "2021 - current",
+      location: "Bangalore, India",
+      project: "GTA,SNAP, LabLens, Astron, Gringotts, QuickTrack, Locker, Reason, Texter, ScrapeParagon, MediaCentral, DuplicateChecker, SIMCreate, SToC",
+      responsibilities: [
+        "Creating a Fully User Level Automation for Compliance Operations teams. GTA is a Fully Automated Tool completely developed by me right through the ideation, approvals, development, and release.",
+        "Assisting the team to create AWS infrastructure.",
+        "Improved overall performance by 300% and error log handling throughout the application which reduced 150k bugs reported every week.",
+        "Improved the efficiency of the reports in the application.",
+        "Wrote a custom python script for cleaning up old unused SharePoint data lists.",
+        "Solved all the High and manual prone deployment in live issues and improved the security."
+      ]
+    },
+    {
+      name:"Think&Learn Pvt Ltd",
+      position:"Software Developer",
+      duration:"2019-2021",
+      location:"Hyderabad, India",
+      project: "CI/CD Automation",
+      responsibilities: [
+        "Creating a CI/CD Automation for the company.",
+        "Creating a custom python script for cleaning up old unused SharePoint data lists.",
+        "Solved all the High and manual prone deployment in live issues and improved the security."
+      ]
+    },
+    {
+      name:"Extra Marks",
+      position:"Python Developer",
+      duration:"2018-2019",
+      location:"Bangalore, India",
+      project: "Django Framework",
+      responsibilities: [
+        "Creating a Django Framework for the company.",
+        "Creating a REST API Calls to FrontEnd using Serializers with Backend as SQL"
+      ]
+    }
+    // Add more company objects here
+  ];
+  const styles = {
+    container: {
+      padding: '2rem',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      borderRadius: '8px',
+      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+      fontFamily: 'Arial, sans-serif',
+      color: '#fff',
+      animation: 'fadeIn 2s'
+    },
+    header: {
+      position: 'relative',
+      fontSize: '2rem',
+      marginBottom: '1.5rem',
+      fontWeight: '600'
+    },
+    underlineContainer: {
+      position: 'absolute',
+      width: '100%',
+      marginTop: '0.5rem',
+      borderTop: '2px solid #ddd'
+    },
+    underlineCircle: {
+      position: 'absolute',
+      width: '10px',
+      height: '10px',
+      backgroundColor: '#ddd',
+      borderRadius: '50%'
+    },
+    companiesList: {
+      marginTop: '1rem',
+      paddingLeft: '0'
+    },
+    companyItem: {
+      marginBottom: '2rem',
+      listStyleType: 'none',
+      padding: '1rem',
+      backgroundColor: 'rgba(255, 255, 255, 0.1)',
+      borderRadius: '8px',
+      boxShadow: '0 2px 4px rgba(0, 0, 0, 0.05)'
+    },
+    companyName: {
+      fontSize: '1.5rem',
+      fontWeight: 'bold'
+    },
+    position: {
+      fontSize: '1rem',
+      marginTop: '0.25rem'
+    },
+    durationLocation: {
+      fontSize: '0.875rem',
+      marginTop: '0.125rem'
+    },
+    projectName: {
+      fontWeight: 'bold',
+      fontSize: '1rem',
+      marginTop: '0.5rem'
+    },
+    responsibilitiesList: {
+      marginTop: '1rem',
+      paddingLeft: '1.25rem',
+      listStyleType: 'disc'
+    },
+    responsibilityItem: {
+      marginTop: '0.5rem'
+    },
+    '@keyframes fadeIn': {
+      from: { opacity: 0 },
+      to: { opacity: 1 }
+    }
+  };
+
   return (
-    <>
-      <div className=" font-medium relative text-2xl mt-2 md:mt-4 mb-4">
+    <div style={styles.container}>
+      <div style={styles.header}>
         Experience
-        <div className="absolute pt-px bg-white mt-px top-full w-full">
-          <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 left-full"></div>
-          <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 right-full"></div>
+        <div style={styles.underlineContainer}>
+          <div style={{ ...styles.underlineCircle, left: '0%' }}></div>
+          <div style={{ ...styles.underlineCircle, right: '0%' }}></div>
         </div>
       </div>
-      <ul className="w-10/12 mt-4 ml-4 px-0 md:px-1">
-        <li className="list-disc">
-          <div className="text-lg md:text-xl text-left font-bold leading-tight">
-            Amazon.com
-          </div>
-          <div className="text-sm md:text-base">Automation Specialist</div>
-          <div className="text-sm text-gray-400 mt-0.5">
-            2021 - current, Bangalore, India
-          </div>
-          <div className="text-sm md:text-base font-bold mt-1">GTA</div>
-          <ul className="list-disc pl-5">
-            <li>
-              Creating a Fully User Level Automation for Compliance Operations teams.</li>
-              <li>GTA is a Fully Automated Tool completely developed by me right through the ideation, approvals, development and release.
-              GTA undergoes continuous CI/CD process to facilitate sudden process SOP changes which makes the GTA to comply to existing SOP.
-              This includes designing and implementing automation solutions using python, javascript, Autohotkey Scripting.
-              GTA stores, logs, adoption in DynamoDB.
-              GTA also connects to Redshift to process the CRUD operations for agents approval scenarios.
-              This automation is used by Compliance Operations teams to process the agents approval scenarios.
-              GTA also connects to S3 to release newer versions.
-              GTA performs 
-                  1. Text Processing and Analysis
-                  2. SIM Query Automation
-                  3. Webpage Scraping
-                  4. Data Approval 
-              
-            </li>
-            <li>
-              Assisting the team in migration from AWS infrastructure to Azure.
-              This includes planning the migration strategy, setting up the
-              Azure environment, and transferring data securely and efficiently.
-              A significant contribution was the migration from MySQL Single
-              server to flexible server, which allowed for the configuration of
-              I/Os and other parameters, resulting in reducing the cost per
-              server by 20%.
-            </li>
-            <li>
-              Improved angular routing and error log handling throughout the
-              application which reduced 150k bugs reported every week. This
-              involved optimizing the routing logic and implementing a robust
-              error handling mechanism to reduce the load on db servers. Also,
-              fixed code structure and introduced practice to improve the code
-              quality resulting in Sonarlint and Checkmarks rating from E to B
-              in a single quarter.
-            </li>
-            <li>
-              Improved the efficiency of the reports in the application. This
-              involved analyzing the existing reports, identifying areas for
-              improvement, and implementing optimizations to enhance report
-              generation speed and accuracy. Techniques such as establishing a
-              consistent reporting schedule, working on data visualization,
-              automating data collection, starting with some goal metrics, and
-              centralizing data were used to improve the reporting process.
-            </li>
-            <li>
-              Wrote a custom bash script for cleaning up old unused Bitbucket
-              branches. This script automates the process of identifying and
-              deleting branches that are no longer in use, keeping the
-              repository clean and manageable. As an active code reviewer, I
-              examine the code changes made by peers, provide constructive
-              feedback, and ensure the code adheres to the project's coding
-              standards and guidelines.
-            </li>
-            <li>
-              Solved all the Checkmarks High and improved the security. This
-              involved addressing all high-priority issues identified by
-              Checkmarx, implementing necessary fixes, and enhancing the overall
-              security of the application.
-            </li>
-          </ul>
-        </li>
+      <ul style={styles.companiesList}>
+        {companies.map((company, index) => (
+          <li key={index} style={styles.companyItem}>
+            <div style={styles.companyName}>{company.name}</div>
+            <div style={styles.position}>{company.position}</div>
+            <div style={styles.durationLocation}>
+              {company.duration}, {company.location}
+            </div>
+            <div style={styles.projectName}>Project: {company.project}</div>
+            <ul style={styles.responsibilitiesList}>
+              {company.responsibilities.map((responsibility, i) => (
+                <li key={i} style={styles.responsibilityItem}>
+                  {responsibility}
+                </li>
+              ))}
+            </ul>
+          </li>
+        ))}
       </ul>
-    </>
+    </div>
   );
 }
+
+
 function Education() {
   return (
     <>
@@ -412,7 +478,7 @@ function Skills() {
             {" "}
             My areas of expertise are{" "}
             <strong className="text-ubt-gedit-orange">
-              Backend development, .NET & Unity!
+              Automation, Python, Backend development, Django!
             </strong>
           </div>
         </li>
@@ -433,84 +499,44 @@ function Skills() {
           <div className="flex flex-wrap justify-center items-start w-full mt-2">
             <img
               className="m-1"
-              src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white"
-              alt="aman c-sharp"
+              src="https://img.shields.io/pypi/pyversions/pandas" 
+              alt="keshavaone python"
             />
-            <img
-              className="m-1"
-              src="https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white"
-              alt="aman unity"
-            />
-            <img
-              className="m-1"
-              src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white"
-              alt="aman PHP"
-            />
+            
             <img
               className="m-1"
               src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
-              alt="aman javascript"
+              alt="keshavaone javascript"
             />
-            <img
-              className="m-1"
-              src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white"
-              alt="aman c++"
-            />
-            <img
-              className="m-1"
-              src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"
-              alt="aman css"
-            />
-            <img
-              className="m-1"
-              src="https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white"
-              alt="aman azure"
-            />
+           
             <img
               className="m-1"
               src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white"
-              alt="aman mysql"
+              alt="keshavaone mysql"
             />
+            
             <img
               className="m-1"
-              src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"
-              alt="aman typescript"
+              src="https://img.shields.io/badge/mongodb-%2300f.svg?style=for-the-badge&logo=mongodb&logoColor=white"
+              alt="keshavaone mongodb"
             />
-            <img
-              className="m-1"
-              src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
-              alt="aman HTML"
-            />
+            
             <img
               className="m-1"
               src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"
-              alt="aman git"
+              alt="keshavaone git"
             />
           </div>
         </div>
         <div className="px-2 flex flex-wrap items-start w-1/2">
           <div className="flex flex-wrap justify-center items-start w-full mt-2">
+            
             <img
               className="m-1"
-              src="https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white"
-              alt="aman .NET"
+              src="https://img.shields.io/badge/django-%2300f.svg?style=for-the-badge&logo=django&logoColor=white"
+              alt="keshav django"
             />
-            <img
-              className="m-1"
-              src="https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white"
-              alt="aman bootstrap"
-            />
-            <img
-              className="m-1"
-              src="https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white"
-              alt="aman angular"
-            />
-            <img
-              className="m-1"
-              src="https://img.shields.io/badge/symfony-%23000000.svg?style=for-the-badge&logo=symfony&logoColor=white"
-              alt="aman symfony"
-            />
-            <img
+            {/* <img
               className="m-1"
               src="https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white"
               alt="aman npm"
@@ -519,7 +545,7 @@ function Skills() {
               className="m-1"
               src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"
               alt="aman node"
-            />
+            /> */}
           </div>
         </div>
       </div>
@@ -529,7 +555,7 @@ function Skills() {
           <img
             className=" inline ml-1"
             src="http://img.shields.io/badge/-Linux-0078D6?style=plastic&logo=linux&logoColor=ffffff"
-            alt="aman linux"
+            alt="keshav linux"
           />{" "}
           <span>!</span>
         </li>
@@ -541,51 +567,15 @@ function Skills() {
 function Projects() {
   const project_list = [
     {
-      name: "Smart OnBoaders",
-      date: "Feb 2024 - Feb 2024",
-      link: "https://github.com/xlibraries/SmartOnboaders",
+      name: "Financial Analysis",
+      date: "Mar 2022 - Apr 2022",
+      link: "https://github.com/keshavaone/PFS",
       description: [
-        "End-to-End Onboarding Platform made for SemiColons(Annual Hackathon of Persistent Systems) for new hires, with Gen-AI powered document processing and HRMS integration.",
+        "A Python script that analyzes personal finance data and generates various reports and visualizations.",
       ],
-      domains: ["React", "MySQl", "OCR", "BedRock"],
+      domains: ["Python", "Data Analysis", "Pandas", "Matplotlib"],
     },
-    {
-      name: "Turbo Trails",
-      date: "Apr 2023 - Present",
-      link: "https://github.com/xlibraries/funny-Racing",
-      description: [
-        "The game I am creating is an immersive journey through the evolution of vehicles across different eras and regions."+
-        " Players assume the role of various vehicles, starting as a simple cart in ancient Mesopotamia and progressing through history as new vehicles are invented.",
-      ],
-      domains: ["C#", "Unity", "Playfab", "Google Play Services"],
-    },
-    {
-      name: "Pact and Promise: The Arcane Door",
-      date: "Nov 2023 - Dec 2023",
-      link: "https://github.com/xlibraries/FairyTail-VN-Jam",
-      description: [
-        "A Visual Novel game made for FairyTail Visual novel game jam hostel on itch.io",
-      ],
-      domains: ["C#", "Unity"],
-    },
-    {
-      name: "SAPA (Software As Product Augmentations)", //Software as product augmentations
-      date: "Apr 2023 - Apr 2023",
-      link: "https://github.com/xlibraries/Technothon-AR_marker",
-      description: [
-        "An augmented reality application developed for simulating environment for sales pitch, where 3D models stored in cloud storage.",
-      ],
-      domains: ["AR", "Azure", ".NET"],
-    },
-    {
-      name: "The Lone Ember",
-      date: "Jul 2021 - Jul 2021",
-      link: "https://xlibraires.itch.io/the-lone-ember",
-      description: [
-        "The Lone Ember is a game of lone chances: each key you press can only be used once. Can you guide your little ember back home?",
-      ],
-      domains: ["Unity", "C#"],
-    },
+    
   ];
 
   const tag_colors = {
@@ -617,7 +607,7 @@ function Projects() {
         </div>
       </div>
       {
-        <iframe src="https://github.com/sponsors/xlibraries/card" title="Sponsor xlibraries" className='my-4 w-5/6 md:w-3/4' ></iframe>
+        <iframe src="https://github.com/sponsors/keshavaone/card" title="Sponsor xlibraries" className='my-4 w-5/6 md:w-3/4' ></iframe>
       }
 
       {project_list.map((project, index) => {
@@ -638,7 +628,7 @@ function Projects() {
                     {project.name.toLowerCase()}
                   </div>
                   <iframe
-                    src={`https://ghbtns.com/github-btn.html?user=xlibraries&repo=${projectName}&type=star&count=true`}
+                    src={`https://ghbtns.com/github-btn.html?user=keshavaone&repo=${projectName}&type=star&count=true`}
                     frameBorder="0"
                     scrolling="0"
                     width="150"
