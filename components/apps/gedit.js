@@ -9,11 +9,21 @@ export class Gedit extends Component {
         super();
         this.state = {
             sending: false,
-        }
+        };
     }
 
     componentDidMount() {
-        emailjs.init(process.env.NEXT_PUBLIC_USER_ID);
+        // Initialize EmailJS user ID
+        emailjs.init('xm5xMJVe_Z23NeqSa'); // Replace 'YOUR_PUBLIC_KEY_HERE' with your actual user ID
+    }
+
+    sendEmail = async (templateParams) => {
+        try {
+            const response = await emailjs.send('service_kuftn7n', 'template_k3x4z2y', templateParams);
+            console.log('SUCCESS!', response.status, response.text);
+        } catch (error) {
+            console.error('FAILED...', error);
+        }
     }
 
     sendMessage = async () => {
@@ -42,27 +52,30 @@ export class Gedit extends Component {
 
         this.setState({ sending: true });
 
-        const serviceID = process.env.NEXT_PUBLIC_SERVICE_ID;
-        const templateID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+        const serviceID = 'service_imoyv0k'; // Replace with your actual Service ID
+        const templateID = 'template_3jb0zee'; // Replace with your actual Template ID
         const templateParams = {
-            'name': name,
-            'subject': subject,
-            'message': message,
-        }
+            name: name,
+            subject: subject,
+            message: 'Mail from '+name+' and the context is '+message,
+            to_email: 'career_keshava@outlook.com' // Your email address
+        };
 
-        emailjs.send(serviceID, templateID, templateParams).then(() => {
+        try {
+            const response = await emailjs.send(serviceID, templateID, templateParams);
             this.setState({ sending: false });
             $("#close-gedit").trigger("click");
-        }).catch(() => {
+            console.log('Email sent successfully!', response);
+        } catch (error) {
+            console.error('Failed to send email:', error);
             this.setState({ sending: false });
             $("#close-gedit").trigger("click");
-        })
+        }
 
         ReactGA.event({
             category: "Send Message",
             action: `${name}, ${subject}, ${message}`
         });
-
     }
 
     render() {
@@ -99,12 +112,12 @@ export class Gedit extends Component {
                     )
                 }
             </div>
-        )
+        );
     }
 }
 
 export default Gedit;
 
 export const displayGedit = () => {
-    return <Gedit> </Gedit>;
+    return <Gedit />;
 }
