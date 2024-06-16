@@ -20,12 +20,12 @@ export default function Meta() {
             <meta name="theme-color" content="#E95420" />
 
             /* Search Engine */
-            <meta name="image" content="images/logos/fevicon.png" />
+            <meta name="image" content="images/logos/IMG20231019134427.jpg" />
             /* Schema.org for Google */
             <meta itemProp="name" content="Keshava Rao's Portfolio - Keshava" />
             <meta itemProp="description"
                 content="Keshava Rao's (keshavaone) Personal Portfolio Website. Made with Ubuntu 20.4 (Linux) theme by Next.js and Tailwind CSS." />
-            <meta itemProp="image" content="images/logos/fevicon.png" />
+            <meta itemProp="image" content="images/logos/IMG20231019134427.jpg" />
             /* Twitter */
             <meta name="twitter:card" content="summary" />
             <meta name="twitter:title" content="Keshava Rao's Portfolio - Keshava" />
@@ -44,7 +44,7 @@ export default function Meta() {
             <meta name="og:locale" content="en_IN" />
             <meta name="og:type" content="website" />
 
-            <link rel="icon" href="images/logos/fevicon.svg" />
+            <link rel="icon" href="images/logos/IMG20231019134427.jpg" />
             <link rel="apple-touch-icon" href="images/logos/logo.png" />
             <link rel="preload" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" as="style" />
             <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"></link>
