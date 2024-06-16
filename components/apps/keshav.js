@@ -607,7 +607,7 @@ function Projects() {
         </div>
       </div>
       {
-        <iframe src="https://github.com/sponsors/keshavaone/card" title="Sponsor xlibraries" className='my-4 w-5/6 md:w-3/4' ></iframe>
+        <iframe src="https://github.com/sponsors/keshavaone/card" title="Sponsor keshavaone" className='my-4 w-5/6 md:w-3/4' ></iframe>
       }
 
       {project_list.map((project, index) => {

@@ -1,8 +1,8 @@
 {
-  "name": "amanagrawal-portfolio",
+  "name": "keshavarao-portfolio",
   "version": "2.0.0",
   "private": true,
-  "homepage": "https://xlibraries.github.io/Xlib/",
+  "homepage": "https://keshavaone.github.io/keshava/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

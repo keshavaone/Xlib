@@ -5,14 +5,14 @@ export default function Meta() {
     return (
         <Head>
            /* Primary Meta Tags */
-            <title>Keshava Rao's Portfolio - Xlib</title>
+            <title>Keshava Rao's Portfolio - Keshava</title>
             <meta charSet="utf-8" />
-            <meta name="title" content="Keshava Rao's Portfolio - Xlib" />
+            <meta name="title" content="Keshava Rao's Portfolio - Keshava" />
             <meta name="description"
-                content="Keshava Rao's (xlibraries) Personal Portfolio Website. Made with Ubuntu 20.4 (Linux) theme by Next.js and Tailwind CSS." />
-            <meta name="author" content="Keshava Rao (xlibraries)" />
+                content="Keshava Rao's (Keshava) Personal Portfolio Website. Made with Ubuntu 20.4 (Linux) theme by Next.js and Tailwind CSS." />
+            <meta name="author" content="Keshava Rao (Keshava)" />
             <meta name="keywords"
-                content="xlibraries, xlibraries's portfolio, xlibraries linux, ubuntu portfolio, Keshava Rao's Portfolio, xlib, Keshava Rao, aman ubuntu, Keshava Rao ubuntu portfolio" />
+                content="keshavaone, keshava's portfolio, keshava linux, ubuntu portfolio, Keshava Rao's Portfolio, keshava, Keshava Rao, keshava ubuntu, Keshava Rao ubuntu portfolio" />
             <meta name="robots" content="index, follow" />
             <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
             <meta name="language" content="English" />
@@ -22,22 +22,22 @@ export default function Meta() {
             /* Search Engine */
             <meta name="image" content="images/logos/fevicon.png" />
             /* Schema.org for Google */
-            <meta itemProp="name" content="Keshava Rao's Portfolio - Xlib" />
+            <meta itemProp="name" content="Keshava Rao's Portfolio - Keshava" />
             <meta itemProp="description"
-                content="Keshava Rao's (xlibraries) Personal Portfolio Website. Made with Ubuntu 20.4 (Linux) theme by Next.js and Tailwind CSS." />
+                content="Keshava Rao's (keshavaone) Personal Portfolio Website. Made with Ubuntu 20.4 (Linux) theme by Next.js and Tailwind CSS." />
             <meta itemProp="image" content="images/logos/fevicon.png" />
             /* Twitter */
             <meta name="twitter:card" content="summary" />
-            <meta name="twitter:title" content="Keshava Rao's Portfolio - Xlib" />
+            <meta name="twitter:title" content="Keshava Rao's Portfolio - Keshava" />
             <meta name="twitter:description"
-                content="Keshava Rao's (xlibraries) Personal Portfolio Website. Made with Ubuntu 20.4 (Linux) theme by Next.js and Tailwind CSS." />
-            <meta name="twitter:site" content="xlibraries" />
-            <meta name="twitter:creator" content="xlibraries" />
+                content="Keshava Rao's (keshavaone) Personal Portfolio Website. Made with Ubuntu 20.4 (Linux) theme by Next.js and Tailwind CSS." />
+            <meta name="twitter:site" content="keshavaone" />
+            <meta name="twitter:creator" content="keshavaone" />
             <meta name="twitter:image:src" content="images/logos/logo_1024.png" />
             /* Open Graph general (Facebook, Pinterest & Google+) */
-            <meta name="og:title" content="Keshava Rao's Portfolio - Xlib" />
+            <meta name="og:title" content="Keshava Rao's Portfolio - Keshava" />
             <meta name="og:description"
-                content="Keshava Rao's (xlibraries) Personal Portfolio Website. Made with Ubuntu 20.4 (Linux) theme by Next.js and Tailwind CSS." />
+                content="Keshava Rao's (keshavaone) Personal Portfolio Website. Made with Ubuntu 20.4 (Linux) theme by Next.js and Tailwind CSS." />
             <meta name="og:image" content="images/logos/logo_1200.png" />
             <meta name="og:url" content="http://xlibraries.github.io/" />
             <meta name="og:site_name" content="Keshava Rao Personal Portfolio" />
