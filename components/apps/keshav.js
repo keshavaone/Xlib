@@ -576,6 +576,17 @@ function Projects() {
       domains: ["Python", "Data Analysis", "Pandas", "Matplotlib"],
     },
     
+    {
+      name: "Pranalikaa",
+      date: "Dec 2022 - Jan 2023",
+      link: "https://github.com/keshavaone/pranalikaa",
+      description: [
+        "The Python Script that reads and tracks your daily habits and ensures the reminders are on place to ensure the daily jobs are being performed on timely manners",
+      ],
+      domains: ["Python", "Data Analysis", "Pandas", "Matplotlib", "Tkinter"],
+    },
+    
+    
   ];
 
   const tag_colors = {
