@@ -272,7 +272,7 @@ function About() {
         <li className=" mt-3 list-star">
           {" "}
           And I also have interest in building Automation Projects at User Level
-          Applications & Backend Django Websites!.
+          Applications & FastAPI.
         </li>
       </ul>
     </>
@@ -312,10 +312,10 @@ function Experience() {
       position:"Python Developer",
       duration:"2018-2019",
       location:"Bangalore, India",
-      project: "Django Framework",
+      project: "FastAPI Framework",
       responsibilities: [
-        "Creating a Django Framework for the company.",
-        "Creating a REST API Calls to FrontEnd using Serializers with Backend as SQL"
+        "FastAPI design and implementation.",
+        "Creating a REST API Calls to FrontEnd using Serializers with Backend as MySQL"
       ]
     }
     // Add more company objects here
@@ -478,7 +478,7 @@ function Skills() {
             {" "}
             My areas of expertise are{" "}
             <strong className="text-ubt-gedit-orange">
-              Automation, Python, Backend development, Django!
+              Automation, Python, Backend development, FastAPI!
             </strong>
           </div>
         </li>
@@ -533,8 +533,8 @@ function Skills() {
             
             <img
               className="m-1"
-              src="https://img.shields.io/badge/django-%2300f.svg?style=for-the-badge&logo=django&logoColor=white"
-              alt="keshav django"
+              src="https://img.shields.io/badge/fastapi-%2300f.svg?style=for-the-badge&logo=fastapi&logoColor=white"
+              alt="keshav fastapi"
             />
             {/* <img
               className="m-1"
@@ -601,7 +601,7 @@ function Projects() {
     html5: "pink-600",
     sass: "pink-400",
     tensorflow: "yellow-600",
-    django: "green-600",
+    fastapi: "green-600",
     python: "green-200",
     "codeforces-api": "gray-300",
     tailwindcss: "blue-300",
