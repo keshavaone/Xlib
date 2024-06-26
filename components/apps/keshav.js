@@ -272,7 +272,7 @@ function About() {
         <li className=" mt-3 list-star">
           {" "}
           And I also have interest in building Automation Projects at User Level
-          Applications & FastAPI.
+          Applications & Django, FastAPI.
         </li>
       </ul>
     </>
@@ -312,9 +312,9 @@ function Experience() {
       position:"Python Developer",
       duration:"2018-2019",
       location:"Bangalore, India",
-      project: "FastAPI Framework",
+      project: "Django, FastAPI Framework",
       responsibilities: [
-        "FastAPI design and implementation.",
+        "Django, FastAPI design and implementation.",
         "Creating a REST API Calls to FrontEnd using Serializers with Backend as MySQL"
       ]
     }
@@ -478,7 +478,7 @@ function Skills() {
             {" "}
             My areas of expertise are{" "}
             <strong className="text-ubt-gedit-orange">
-              Automation, Python, Backend development, FastAPI!
+              Automation, Python, Backend development, Django, FastAPI!
             </strong>
           </div>
         </li>
