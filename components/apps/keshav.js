@@ -272,7 +272,7 @@ function About() {
         <li className=" mt-3 list-star">
           {" "}
           And I also have interest in building Automation Projects at User Level
-          Applications & FastAPI.
+          Applications & Django, FastAPI.
         </li>
       </ul>
     </>
@@ -281,18 +281,19 @@ function About() {
 function Experience() {
   const companies = [
     {
-      name: "Amazon.com",
-      position: "Automation Specialist",
+      name: "Amazon",
+      position: "Sr. Python Developer",
       duration: "2021 - current",
       location: "Bangalore, India",
-      project: "GTA,SNAP, LabLens, Astron, Gringotts, QuickTrack, Locker, Reason, Texter, ScrapeParagon, MediaCentral, DuplicateChecker, SIMCreate, SToC",
+      project: "GTA, SNAP, LabLens, Astron, Gringotts, QuickTrack, Locker, Reason, Texter, ScrapeParagon, MediaCentral, DuplicateChecker, SIMCreate, SToC",
       responsibilities: [
-        "Creating a Fully User Level Automation for Compliance Operations teams. GTA is a Fully Automated Tool completely developed by me right through the ideation, approvals, development, and release.",
-        "Assisting the team to create AWS infrastructure.",
+        "Developed a comprehensive automated pipeline system, encompassing client-side performance code, API design, log collec-tion, and an update notification system, fully integrated into a desktop application.",
+        "Created Amazon QuickSight views to vis-ualize application performance, leading to a 65% reduction in Average Handling Time (AHT) for the department.",
         "Improved overall performance by 300% and error log handling throughout the application which reduced 150k bugs reported every week.",
-        "Improved the efficiency of the reports in the application.",
+        "Experience with AWS services including S3, Redshift, EC2, and Hubble.",
         "Wrote a custom python script for cleaning up old unused SharePoint data lists.",
-        "Solved all the High and manual prone deployment in live issues and improved the security."
+        "Proficient in FastAPI, Python, Type Annotations, and Pandas.",
+        "Skilled in machine learning frameworks such as TensorFlow, Keras, and PyTorch."
       ]
     },
     {
@@ -312,9 +313,9 @@ function Experience() {
       position:"Python Developer",
       duration:"2018-2019",
       location:"Bangalore, India",
-      project: "FastAPI Framework",
+      project: "Django, FastAPI Framework",
       responsibilities: [
-        "FastAPI design and implementation.",
+        "Django, FastAPI design and implementation.",
         "Creating a REST API Calls to FrontEnd using Serializers with Backend as MySQL"
       ]
     }
@@ -478,7 +479,7 @@ function Skills() {
             {" "}
             My areas of expertise are{" "}
             <strong className="text-ubt-gedit-orange">
-              Automation, Python, Backend development, FastAPI!
+              Automation, Python, Backend development, Django, FastAPI!
             </strong>
           </div>
         </li>
