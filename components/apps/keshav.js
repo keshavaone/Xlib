@@ -678,7 +678,7 @@ function Resume() {
     <iframe
       className="h-full w-full"
       src="./files/KeshavaRao.pdf"
-      title="Keshava Rao resume"
+      title="Keshava Rao Resume"
       frameBorder="0"
     ></iframe>
   );
