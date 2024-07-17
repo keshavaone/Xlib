@@ -272,7 +272,7 @@ function About() {
         <li className=" mt-3 list-star">
           {" "}
           And I also have interest in building Automation Projects at User Level
-          Applications & Django, FastAPI.
+          Applications & Backend Django Websites!.
         </li>
       </ul>
     </>
@@ -281,19 +281,18 @@ function About() {
 function Experience() {
   const companies = [
     {
-      name: "Amazon",
-      position: "Sr. Python Developer",
+      name: "Amazon.com",
+      position: "Automation Specialist",
       duration: "2021 - current",
       location: "Bangalore, India",
-      project: "GTA, SNAP, LabLens, Astron, Gringotts, QuickTrack, Locker, Reason, Texter, ScrapeParagon, MediaCentral, DuplicateChecker, SIMCreate, SToC",
+      project: "GTA,SNAP, LabLens, Astron, Gringotts, QuickTrack, Locker, Reason, Texter, ScrapeParagon, MediaCentral, DuplicateChecker, SIMCreate, SToC",
       responsibilities: [
-        "Developed a comprehensive automated pipeline system, encompassing client-side performance code, API design, log collec-tion, and an update notification system, fully integrated into a desktop application.",
-        "Created Amazon QuickSight views to vis-ualize application performance, leading to a 65% reduction in Average Handling Time (AHT) for the department.",
+        "Creating a Fully User Level Automation for Compliance Operations teams. GTA is a Fully Automated Tool completely developed by me right through the ideation, approvals, development, and release.",
+        "Assisting the team to create AWS infrastructure.",
         "Improved overall performance by 300% and error log handling throughout the application which reduced 150k bugs reported every week.",
-        "Experience with AWS services including S3, Redshift, EC2, and Hubble.",
+        "Improved the efficiency of the reports in the application.",
         "Wrote a custom python script for cleaning up old unused SharePoint data lists.",
-        "Proficient in FastAPI, Python, Type Annotations, and Pandas.",
-        "Skilled in machine learning frameworks such as TensorFlow, Keras, and PyTorch."
+        "Solved all the High and manual prone deployment in live issues and improved the security."
       ]
     },
     {
@@ -313,10 +312,10 @@ function Experience() {
       position:"Python Developer",
       duration:"2018-2019",
       location:"Bangalore, India",
-      project: "Django, FastAPI Framework",
+      project: "Django Framework",
       responsibilities: [
-        "Django, FastAPI design and implementation.",
-        "Creating a REST API Calls to FrontEnd using Serializers with Backend as MySQL"
+        "Creating a Django Framework for the company.",
+        "Creating a REST API Calls to FrontEnd using Serializers with Backend as SQL"
       ]
     }
     // Add more company objects here
@@ -479,7 +478,7 @@ function Skills() {
             {" "}
             My areas of expertise are{" "}
             <strong className="text-ubt-gedit-orange">
-              Automation, Python, Backend development, Django, FastAPI!
+              Automation, Python, Backend development, Django!
             </strong>
           </div>
         </li>
@@ -534,8 +533,8 @@ function Skills() {
             
             <img
               className="m-1"
-              src="https://img.shields.io/badge/fastapi-%2300f.svg?style=for-the-badge&logo=fastapi&logoColor=white"
-              alt="keshav fastapi"
+              src="https://img.shields.io/badge/django-%2300f.svg?style=for-the-badge&logo=django&logoColor=white"
+              alt="keshav django"
             />
             {/* <img
               className="m-1"
@@ -577,17 +576,6 @@ function Projects() {
       domains: ["Python", "Data Analysis", "Pandas", "Matplotlib"],
     },
     
-    {
-      name: "Pranalikaa",
-      date: "Dec 2022 - Jan 2023",
-      link: "https://github.com/keshavaone/pranalikaa",
-      description: [
-        "The Python Script that reads and tracks your daily habits and ensures the reminders are on place to ensure the daily jobs are being performed on timely manners",
-      ],
-      domains: ["Python", "Data Analysis", "Pandas", "Matplotlib", "Tkinter"],
-    },
-    
-    
   ];
 
   const tag_colors = {
@@ -602,7 +590,7 @@ function Projects() {
     html5: "pink-600",
     sass: "pink-400",
     tensorflow: "yellow-600",
-    fastapi: "green-600",
+    django: "green-600",
     python: "green-200",
     "codeforces-api": "gray-300",
     tailwindcss: "blue-300",
@@ -619,7 +607,7 @@ function Projects() {
         </div>
       </div>
       {
-        <iframe src="https://github.com/sponsors/keshavaone/card" title="Sponsor keshavaone" className='my-4 w-5/6 md:w-3/4' ></iframe>
+        <iframe src="https://github.com/sponsors/keshavaone/card" title="Sponsor xlibraries" className='my-4 w-5/6 md:w-3/4' ></iframe>
       }
 
       {project_list.map((project, index) => {
@@ -689,7 +677,7 @@ function Resume() {
   return (
     <iframe
       className="h-full w-full"
-      src="./files/Keshava-Rao-Resume.pdf"
+      src="./files/KeshavaRao.pdf"
       title="Keshava Rao resume"
       frameBorder="0"
     ></iframe>
