@@ -24,6 +24,7 @@ export class AboutKeshav extends Component {
       skills: <Skills />,
       projects: <Projects />,
       resume: <Resume />,
+      technologies:<TechnologiesUsed />
     };
 
     let lastVisitedScreen = localStorage.getItem("about-section");
@@ -115,6 +116,25 @@ export class AboutKeshav extends Component {
           />
           <span className=" ml-1 md:ml-2 text-gray-50 ">Education</span>
         </div>
+        <div
+          id="technologies"
+          tabIndex="0"
+          onFocus={this.changeScreen}
+          className={
+            (this.state.active_screen === "technologies"
+              ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95"
+              : " hover:bg-gray-50 hover:bg-opacity-5 ") +
+            " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"
+          }
+        >
+          <img
+            className=" w-3 md:w-4"
+            alt="technologies used"
+            src="./themes/Yaru/status/tech_uses.svg"
+          />
+          <span className=" ml-1 md:ml-2 text-gray-50 ">Technologies/Tools</span>
+        </div>
+        
         <div
           id="skills"
           tabIndex="0"
@@ -282,41 +302,27 @@ function Experience() {
   const companies = [
     {
       name: "Amazon.com",
-      position: "Automation Specialist",
+      position: "Sr. Python Developer",
       duration: "2021 - current",
       location: "Bangalore, India",
       project: "GTA,SNAP, LabLens, Astron, Gringotts, QuickTrack, Locker, Reason, Texter, ScrapeParagon, MediaCentral, DuplicateChecker, SIMCreate, SToC",
-      responsibilities: [
-        "Creating a Fully User Level Automation for Compliance Operations teams. GTA is a Fully Automated Tool completely developed by me right through the ideation, approvals, development, and release.",
-        "Assisting the team to create AWS infrastructure.",
-        "Improved overall performance by 300% and error log handling throughout the application which reduced 150k bugs reported every week.",
-        "Improved the efficiency of the reports in the application.",
-        "Wrote a custom python script for cleaning up old unused SharePoint data lists.",
-        "Solved all the High and manual prone deployment in live issues and improved the security."
-      ]
+      responsibilities: []
     },
     {
       name:"Think&Learn Pvt Ltd",
       position:"Software Developer",
       duration:"2019-2021",
       location:"Hyderabad, India",
-      project: "CI/CD Automation",
-      responsibilities: [
-        "Creating a CI/CD Automation for the company.",
-        "Creating a custom python script for cleaning up old unused SharePoint data lists.",
-        "Solved all the High and manual prone deployment in live issues and improved the security."
-      ]
+      project: "",
+      responsibilities: []
     },
     {
       name:"Extra Marks",
       position:"Python Developer",
       duration:"2018-2019",
       location:"Bangalore, India",
-      project: "Django Framework",
-      responsibilities: [
-        "Creating a Django Framework for the company.",
-        "Creating a REST API Calls to FrontEnd using Serializers with Backend as SQL"
-      ]
+      project: "",
+      responsibilities: []
     }
     // Add more company objects here
   ];
@@ -410,7 +416,11 @@ function Experience() {
             <div style={styles.durationLocation}>
               {company.duration}, {company.location}
             </div>
-            <div style={styles.projectName}>Project: {company.project}</div>
+            
+            {company.project && (
+              <div style={styles.projectName}>Project: {company.project}</div>
+            )}
+            
             <ul style={styles.responsibilitiesList}>
               {company.responsibilities.map((responsibility, i) => (
                 <li key={i} style={styles.responsibilityItem}>
@@ -425,6 +435,52 @@ function Experience() {
   );
 }
 
+function TechnologiesUsed() {
+  const techStack = [
+    { name: "Python", experience: "5.5" },
+    { name: "AWS", experience: "3" },
+    { name: "Keras", experience: "3" },
+    { name: "Tensorflow", experience: "3" },
+    { name: "PyTorch", experience: "3" },
+    { name: "FastAPI", experience: "4" },
+    { name: "Docker", experience: "4" },
+    { name: "Kubernetes", experience: "4" },
+    { name: "Containerization", experience: "4" },
+    { name: "MySQL", experience: "4" },
+    { name: "MongoDB", experience: "5" },
+    { name: "Pydantic", experience: "4" },
+    { name: "JavaScript", experience: "4" },
+    { name: "Pandas", experience: "4" },
+    { name: "PowerBI", experience: "4" },
+    { name: "QuickSight", experience: "3" },
+    // Add more technologies and experiences here
+  ];
+  const other_techs = "#ML,#NLP, #CV, #NLP, #AI, #LLM, #ChatBot, #Pipeline, #CodeReview, #TypeAnnotations, #DBMS";
+
+  return (
+    <>
+      <div className=" font-medium relative text-2xl mt-2 md:mt-4 mb-4">
+        Technologies Used
+        <div className="absolute pt-px bg-white mt-px top-full w-full">
+          <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 left-full"></div>
+          <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 right-full"></div>
+        </div>
+      </div>
+      <ul className=" w-10/12  mt-4 ml-4 px-0 md:px-1">
+        {techStack.map((tech, index) => (
+          <li key={index} className="list-disc">
+            <div className=" text-lg md:text-xl text-left font-bold leading-tight">
+              {tech.name} ({tech.experience} Years)
+            </div>  
+          </li>
+        ))}
+        <br></br>
+        
+        {other_techs}
+      </ul>
+    </>
+  );
+}
 
 function Education() {
   return (
@@ -478,7 +534,7 @@ function Skills() {
             {" "}
             My areas of expertise are{" "}
             <strong className="text-ubt-gedit-orange">
-              Automation, Python, Backend development, Django!
+              Automation, Python, Backend development!
             </strong>
           </div>
         </li>
