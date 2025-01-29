@@ -304,7 +304,7 @@ function Experience() {
       duration: "2024 - current",
       location: "Bangalore, India",
       project: "Bearing Sensor Data Pipeline System"
-      responsibilities: ["Scrum Master","Backend Developer"]
+      responsibilities: []
     },
     {
       name: "Amazon.com",
