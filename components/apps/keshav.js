@@ -286,13 +286,11 @@ function About() {
         </li>
         <li className=" mt-3 list-time">
           {" "}
-          When I am not coding my next project, I like go out for dance & play drums
-          Read Books.
+          When I am not coding my next project, I like go out for dance & Read Books.
         </li>
         <li className=" mt-3 list-star">
           {" "}
-          And I also have interest in building Automation Projects at User Level
-          Applications & Backend Django Websites!.
+          And I do code in AWS, Write SQL Queries, Most Importantly also a Scrum Master.
         </li>
       </ul>
     </>
@@ -300,6 +298,14 @@ function About() {
 }
 function Experience() {
   const companies = [
+    {
+      name: "Quest Global (Currently Working for SKF)",
+      position: "Sr. Software Developer",
+      duration: "2024 - current",
+      location: "Bangalore, India",
+      project: "Bearing Sensor Data Pipeline System"
+      responsibilities: ["Scrum Master","Backend Developer"]
+    },
     {
       name: "Amazon.com",
       position: "Sr. Python Developer",
