@@ -453,6 +453,7 @@ function TechnologiesUsed() {
     { name: "Kubernetes", experience: "4" },
     { name: "Containerization", experience: "4" },
     { name: "MySQL", experience: "4" },
+    { name: "PostgreSQL",experience: 4},
     { name: "MongoDB", experience: "5" },
     { name: "Pydantic", experience: "4" },
     { name: "JavaScript", experience: "4" },
