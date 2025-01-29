@@ -303,7 +303,7 @@ function Experience() {
       position: "Sr. Software Developer",
       duration: "2024 - current",
       location: "Bangalore, India",
-      project: "Bearing Sensor Data Pipeline System"
+      project: "Bearing Sensor Data Pipeline System",
       responsibilities: []
     },
     {
