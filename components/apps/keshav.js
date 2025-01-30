@@ -258,7 +258,7 @@ function About() {
         </div>
         <div className="font-normal ml-1">
           I'm a{" "}
-          <span className="text-pink-600 font-bold">Python Developer!</span>
+          <span className="text-pink-600 font-bold">Sr. Software Developer!</span>
         </div>
       </div>
       <div className=" mt-4 relative md:my-8 pt-px bg-white w-32 md:w-48">
@@ -301,12 +301,20 @@ function About() {
 function Experience() {
   const companies = [
     {
+      name: "Quest Global (Thirdparty Payroll from Scalene)",
+      position: "Sr. Software Engineer",
+      duration: "2024 - current",
+      location: "Bangalore, India",
+      project: "Bearing Sensor Data Pipeline API Development",
+      responsibilities: ["Scrum Master","Backend Developer(Python, AWS, PostgreSQL, FastAPI, Docker, Kubernetes)"]
+    },
+    {
       name: "Amazon.com",
       position: "Sr. Python Developer",
-      duration: "2021 - current",
+      duration: "2021 - 2024",
       location: "Bangalore, India",
       project: "GTA,SNAP, LabLens, Astron, Gringotts, QuickTrack, Locker, Reason, Texter, ScrapeParagon, MediaCentral, DuplicateChecker, SIMCreate, SToC",
-      responsibilities: []
+      responsibilities: ["Backend Developer", "Python Developer", "AWS, Docker, Kubernetes, FastAPI, Pydantic, MySQL, MongoDB, PowerBI, QuickSight"]
     },
     {
       name:"Think&Learn Pvt Ltd",
