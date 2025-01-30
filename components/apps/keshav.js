@@ -286,13 +286,11 @@ function About() {
         </li>
         <li className=" mt-3 list-time">
           {" "}
-          When I am not coding my next project, I like go out for dance & play drums
-          Read Books.
+          When I am not coding my next project, I like go out for dance & Read Books.
         </li>
         <li className=" mt-3 list-star">
           {" "}
-          And I also have interest in building Automation Projects at User Level
-          Applications & Backend Django Websites!.
+          And I do code in AWS, Write SQL Queries, Most Importantly also a Scrum Master.
         </li>
       </ul>
     </>
@@ -307,6 +305,7 @@ function Experience() {
       location: "Bangalore, India",
       project: "Bearing Sensor Data Pipeline API Development",
       responsibilities: ["Scrum Master","Backend Developer(Python, AWS, PostgreSQL, FastAPI, Docker, Kubernetes)"]
+
     },
     {
       name: "Amazon.com",
@@ -455,6 +454,7 @@ function TechnologiesUsed() {
     { name: "Kubernetes", experience: "4" },
     { name: "Containerization", experience: "4" },
     { name: "MySQL", experience: "4" },
+    { name: "PostgreSQL",experience: 4},
     { name: "MongoDB", experience: "5" },
     { name: "Pydantic", experience: "4" },
     { name: "JavaScript", experience: "4" },
