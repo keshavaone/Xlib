@@ -299,20 +299,21 @@ function About() {
 function Experience() {
   const companies = [
     {
-      name: "Quest Global (Currently Working for SKF)",
-      position: "Sr. Software Developer",
+      name: "Quest Global (Thirdparty Payroll from Scalene)",
+      position: "Sr. Software Engineer",
       duration: "2024 - current",
       location: "Bangalore, India",
-      project: "Bearing Sensor Data Pipeline System",
-      responsibilities: []
+      project: "Bearing Sensor Data Pipeline API Development",
+      responsibilities: ["Scrum Master","Backend Developer(Python, AWS, PostgreSQL, FastAPI, Docker, Kubernetes)"]
+
     },
     {
       name: "Amazon.com",
       position: "Sr. Python Developer",
-      duration: "2021 - current",
+      duration: "2021 - 2024",
       location: "Bangalore, India",
       project: "GTA,SNAP, LabLens, Astron, Gringotts, QuickTrack, Locker, Reason, Texter, ScrapeParagon, MediaCentral, DuplicateChecker, SIMCreate, SToC",
-      responsibilities: []
+      responsibilities: ["Backend Developer", "Python Developer", "AWS, Docker, Kubernetes, FastAPI, Pydantic, MySQL, MongoDB, PowerBI, QuickSight"]
     },
     {
       name:"Think&Learn Pvt Ltd",
