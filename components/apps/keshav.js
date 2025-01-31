@@ -270,7 +270,7 @@ function About() {
           I'm a<span className=" font-medium">Sr. Software Engineer </span>
           at &nbsp;
           <u className=" cursor-pointer ">
-            <a href="https://www.amazon.com/" target={"_blank"}>
+            <a href="https://www.quest-global.com" target={"_blank"}>
               Quest Global
             </a>
           </u>
