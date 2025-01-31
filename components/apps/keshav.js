@@ -258,7 +258,7 @@ function About() {
         </div>
         <div className="font-normal ml-1">
           I'm a{" "}
-          <span className="text-pink-600 font-bold">Sr. Software Developer!</span>
+          <span className="text-pink-600 font-bold">Sr. Software Engineer!</span>
         </div>
       </div>
       <div className=" mt-4 relative md:my-8 pt-px bg-white w-32 md:w-48">
@@ -267,11 +267,11 @@ function About() {
       </div>
       <ul className=" mt-4 leading-tight tracking-tight text-sm md:text-base w-5/6 md:w-3/4 emoji-list">
         <li className=" list-pc">
-          I'm a<span className=" font-medium">Python Developer </span>
+          I'm a<span className=" font-medium">Sr. Software Engineer </span>
           at &nbsp;
           <u className=" cursor-pointer ">
             <a href="https://www.amazon.com/" target={"_blank"}>
-              AMAZON
+              Quest Global
             </a>
           </u>
           , and open for oppurtunities Software Development Roles! ( Hit me up{" "}
@@ -628,115 +628,115 @@ function Skills() {
   );
 }
 
-function Projects() {
-  const project_list = [
-    {
-      name: "Financial Analysis",
-      date: "Mar 2022 - Apr 2022",
-      link: "https://github.com/keshavaone/PFS",
-      description: [
-        "A Python script that analyzes personal finance data and generates various reports and visualizations.",
-      ],
-      domains: ["Python", "Data Analysis", "Pandas", "Matplotlib"],
-    },
+// function Projects() {
+//   const project_list = [
+//     {
+//       name: "Financial Analysis",
+//       date: "Mar 2022 - Apr 2022",
+//       link: "https://github.com/keshavaone/PFS",
+//       description: [
+//         "A Python script that analyzes personal finance data and generates various reports and visualizations.",
+//       ],
+//       domains: ["Python", "Data Analysis", "Pandas", "Matplotlib"],
+//     },
     
-  ];
+//   ];
 
-  const tag_colors = {
-    javascript: "yellow-300",
-    firebase: "red-600",
-    firestore: "red-500",
-    "firebase auth": "red-400",
-    "chrome-extension": "yellow-400",
-    flutter: "blue-400",
-    dart: "blue-500",
-    "react-native": "purple-500",
-    html5: "pink-600",
-    sass: "pink-400",
-    tensorflow: "yellow-600",
-    django: "green-600",
-    python: "green-200",
-    "codeforces-api": "gray-300",
-    tailwindcss: "blue-300",
-    "next.js": "purple-600",
-  };
+//   const tag_colors = {
+//     javascript: "yellow-300",
+//     firebase: "red-600",
+//     firestore: "red-500",
+//     "firebase auth": "red-400",
+//     "chrome-extension": "yellow-400",
+//     flutter: "blue-400",
+//     dart: "blue-500",
+//     "react-native": "purple-500",
+//     html5: "pink-600",
+//     sass: "pink-400",
+//     tensorflow: "yellow-600",
+//     django: "green-600",
+//     python: "green-200",
+//     "codeforces-api": "gray-300",
+//     tailwindcss: "blue-300",
+//     "next.js": "purple-600",
+//   };
 
-  return (
-    <>
-      <div className=" font-medium relative text-2xl mt-2 md:mt-4 mb-4">
-        Projects
-        <div className="absolute pt-px bg-white mt-px top-full w-full">
-          <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 left-full"></div>
-          <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 right-full"></div>
-        </div>
-      </div>
-      {
-        <iframe src="https://github.com/sponsors/keshavaone/card" title="Sponsor xlibraries" className='my-4 w-5/6 md:w-3/4' ></iframe>
-      }
+//   return (
+//     <>
+//       <div className=" font-medium relative text-2xl mt-2 md:mt-4 mb-4">
+//         Projects
+//         <div className="absolute pt-px bg-white mt-px top-full w-full">
+//           <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 left-full"></div>
+//           <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 right-full"></div>
+//         </div>
+//       </div>
+//       {
+//         <iframe src="https://github.com/sponsors/keshavaone/card" title="Sponsor xlibraries" className='my-4 w-5/6 md:w-3/4' ></iframe>
+//       }
 
-      {project_list.map((project, index) => {
-        const projectNameFromLink = project.link.split("/");
-        const projectName = projectNameFromLink[projectNameFromLink.length - 1];
-        return (
-          <a
-            key={index}
-            href={project.link}
-            target="_blank"
-            rel="noreferrer"
-            className="flex w-full flex-col px-4"
-          >
-            <div className="w-full py-1 px-2 my-2 border border-gray-50 border-opacity-10 rounded hover:bg-gray-50 hover:bg-opacity-5 cursor-pointer">
-              <div className="flex flex-wrap justify-between items-center">
-                <div className="flex justify-center items-center">
-                  <div className=" text-base md:text-lg mr-2">
-                    {project.name.toLowerCase()}
-                  </div>
-                  <iframe
-                    src={`https://ghbtns.com/github-btn.html?user=keshavaone&repo=${projectName}&type=star&count=true`}
-                    frameBorder="0"
-                    scrolling="0"
-                    width="150"
-                    height="20"
-                    title={project.name.toLowerCase() + "-star"}
-                  ></iframe>
-                </div>
-                <div className="text-gray-300 font-light text-sm">
-                  {project.date}
-                </div>
-              </div>
-              <ul className=" tracking-normal leading-tight text-sm font-light ml-4 mt-1">
-                {project.description.map((desc, index) => {
-                  return (
-                    <li key={index} className="list-disc mt-1 text-gray-100">
-                      {desc}
-                    </li>
-                  );
-                })}
-              </ul>
-              <div className="flex flex-wrap items-start justify-start text-xs py-2">
-                {project.domains
-                  ? project.domains.map((domain, index) => {
-                      const borderColorClass = `border-${tag_colors[domain]}`;
-                      const textColorClass = `text-${tag_colors[domain]}`;
+//       {project_list.map((project, index) => {
+//         const projectNameFromLink = project.link.split("/");
+//         const projectName = projectNameFromLink[projectNameFromLink.length - 1];
+//         return (
+//           <a
+//             key={index}
+//             href={project.link}
+//             target="_blank"
+//             rel="noreferrer"
+//             className="flex w-full flex-col px-4"
+//           >
+//             <div className="w-full py-1 px-2 my-2 border border-gray-50 border-opacity-10 rounded hover:bg-gray-50 hover:bg-opacity-5 cursor-pointer">
+//               <div className="flex flex-wrap justify-between items-center">
+//                 <div className="flex justify-center items-center">
+//                   <div className=" text-base md:text-lg mr-2">
+//                     {project.name.toLowerCase()}
+//                   </div>
+//                   <iframe
+//                     src={`https://ghbtns.com/github-btn.html?user=keshavaone&repo=${projectName}&type=star&count=true`}
+//                     frameBorder="0"
+//                     scrolling="0"
+//                     width="150"
+//                     height="20"
+//                     title={project.name.toLowerCase() + "-star"}
+//                   ></iframe>
+//                 </div>
+//                 <div className="text-gray-300 font-light text-sm">
+//                   {project.date}
+//                 </div>
+//               </div>
+//               <ul className=" tracking-normal leading-tight text-sm font-light ml-4 mt-1">
+//                 {project.description.map((desc, index) => {
+//                   return (
+//                     <li key={index} className="list-disc mt-1 text-gray-100">
+//                       {desc}
+//                     </li>
+//                   );
+//                 })}
+//               </ul>
+//               <div className="flex flex-wrap items-start justify-start text-xs py-2">
+//                 {project.domains
+//                   ? project.domains.map((domain, index) => {
+//                       const borderColorClass = `border-${tag_colors[domain]}`;
+//                       const textColorClass = `text-${tag_colors[domain]}`;
 
-                      return (
-                        <span
-                          key={index}
-                          className={`px-1.5 py-0.5 w-max border ${borderColorClass} ${textColorClass} m-1 rounded-full`}
-                        >
-                          {domain}
-                        </span>
-                      );
-                    })
-                  : null}
-              </div>
-            </div>
-          </a>
-        );
-      })}
-    </>
-  );
-}
+//                       return (
+//                         <span
+//                           key={index}
+//                           className={`px-1.5 py-0.5 w-max border ${borderColorClass} ${textColorClass} m-1 rounded-full`}
+//                         >
+//                           {domain}
+//                         </span>
+//                       );
+//                     })
+//                   : null}
+//               </div>
+//             </div>
+//           </a>
+//         );
+//       })}
+//     </>
+//   );
+// }
 function Resume() {
   return (
     <iframe
